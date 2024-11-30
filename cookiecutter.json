@@ -1,11 +1,23 @@
 {
     "project_name": "Untitled Project",
-    "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '_').replace('-', '_') }}",
-    "full_name": "Your Name",
-    "email": "your@email.address",
-    "github_username": "your-name",
-    "version": "0.1.0",
     "project_short_description": "",
+    "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '_').replace('-', '_') }}",
+    "cmake_minimum_required": "3.26",
+    "lib_type": [
+        "static",
+        "shared"
+    ],
+    "c_standard": [
+        "11",
+        "90",
+        "99",
+        "17",
+        "23"
+    ],
+    "has_include_folder": false,
+    "has_application": false,
+    "has_test": true,
+    "has_example": true,
     "open_source_license": [
         "Apache-2.0",
         "Proprietary",
